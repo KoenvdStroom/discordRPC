@@ -25,9 +25,8 @@ def update_presence():
   details="Last updated:", 
   large_image="octocat", 
   large_text="github.com/KoenvdStroom", 
-  buttons=[{"label": "Github", "url": "https://github.com/KoenvdStroom"}, {"label": last_updated.name, "url": "https://github.com/KoenvdStroom/"+ last_updated.name}]
+  buttons=[{"label": "Github", "url": "https://github.com/KoenvdStroom"}, {"label": last_updated.full_name, "url": "https://github.com/KoenvdStroom/"+ last_updated.name}]
   )
-update_presence()
 while True:
-  time.sleep(1800)
   update_presence()
+  time.sleep(300)
